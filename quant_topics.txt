@@ -1,1 +1,18 @@
-echo "alias update-arena='cd ~/projects/arena/arena_dashboard && git pull && pm2 restart arena'" >> ~/.zshrc && source ~/.zshrc
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+
+
+
+
+
+cat >> ~/.ssh/config <<'EOF'
+
+Host github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+EOF
+
+
+
+
+ssh -T git@github.com

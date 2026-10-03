@@ -1,1 +1,1 @@
-http://localhost:8000/
+echo "alias update-arena='cd ~/projects/arena/arena_dashboard && git pull && pm2 restart arena'" >> ~/.zshrc && source ~/.zshrc

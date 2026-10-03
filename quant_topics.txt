@@ -1,1 +1,1 @@
-git clone git@github.com:mahesh-katta/arena_dashboard.git
+pm2 start arena_dashboard/server.mjs --name arena -- 8000
